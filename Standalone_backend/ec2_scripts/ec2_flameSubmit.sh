@@ -1,0 +1,1 @@
+java -cp lib/kvs.jar:lib/webserver.jar:lib/flame.jar cis5550.flame.FlameSubmit 54.242.147.21:80 crawler.jar cis5550.jobs.Crawler https://en.wikipedia.org/wiki/Wikipedia:Popular_pages blacklist

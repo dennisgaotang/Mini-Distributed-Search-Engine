@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+  <link rel='icon' href='https://icons.iconarchive.com/icons/graphicloads/100-flat/256/zoom-seach-icon.png' type='image/x-icon' />
+  <link rel="stylesheet" type="text/css" href="css/index.css" />
+  <script src="javascript/main.js" type="module"></script>
+  <title>Search Engine</title>
+</head>
+<body>
+<main>
+  <div class="container">
+    <h1 class="logo">Search Engine</h1>
+    <section class="entryPart">
+      <h2 class="hidden">Section for entering the search query</h2>
+      <form id="searchEntry" autocomplete="off">
+        <div class="autocomplete">
+          <div class="search-bar">
+            <input type="text" name="searchInput" id="searchInput" class="searchInput" placeholder="Enter a search term">
+            <div class="icons-container">
+              <div id="clearText" class="none clear" aria-label="Clear the search input" style="display:none">
+                <i class="fas fa-times"></i>
+              </div>
+              <button type="submit" id="submitButton" class="submit-button">
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="autocomplete-items hidden"></div>
+      </form>
+    </section>
+    <section id="resultsSection" class="resultsPart">
+      <div id="resultsNumber" class="resultsNumber" aria-live="assertive"></div>
+      <div id="resultItems" class="resultItems"></div>
+    </section>
+  </div>
+</main>
+<footer>
+  <p>
+    <a target="\_blank" href="https://github.com/CIS5550/Sp24-CIS5550-Project-CodeCrafters">Group CodeCrafters</a>
+  </p>
+</footer>
+</body>
+</html>
